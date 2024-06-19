@@ -1,7 +1,7 @@
 > [!TIP]
 > Add your email and user name prior initializing the git in the local<br />
-> - git config user.emai `<your email>` <br />
-> - git config user.name `<your name>`<br />
+> - git config user.emai `"<your email>"` <br />
+> - git config user.name `"<your name>"`<br />
 
 ### initialising git in at the folder
 - git init
