@@ -1,4 +1,4 @@
-# Using the browser console
+# Chapter 1 - $\color{#1FB42A}{DONE}$
 
 ## Practice exercise 1.1 - $\color{#1FB42A}{DONE}$
 ### Working with the console:
@@ -29,4 +29,25 @@ let a = 10;
 3. Print the value using console.log(). Add a comment explaining what this will do.
 4. At the end of your JavaScript code, use a multiple-line comment. In a real production script, you might use this space to add a brief outline of the purpose of the file.
 
-## <span style="background-color: yellow">`next topic is "prompt" at page 14`</span>
+<!-- ## <span style="background-color: yellow">`next topic is "prompt" at page 14`</span> -->
+
+## Chapter project  - $\color{#1FB42A}{DONE}$
+
+### Creating an HTML file and a linked JavaScript file
+
+#### Create an HTML file and create a separate JavaScript file. Then, connect to the JavaScript file from the HTML file.
+1. In the JavaScript file, output your name into the console and add a multiple- line comment to your code.
+2. Try commenting out the console message in your JavaScript file so that nothing shows in the console.
+
+### Self-check quiz - $\color{#1FB42A}{DONE}$
+
+
+1. What is the HTML syntax to add an external JavaScript file?
+<br/>A.) `<script type="text/javascript" src="javascript.js"></script>`
+2. Can you run JavaScript in a file with a JS extension in your browser?
+<br/>A.) No
+3. How do you write a multiple-line comment in JavaScript?
+<br/>A.) /* Multi
+<br/>$~~~~~$ Line */
+4. What is the best way to remove a line of code from running that you might want to keep as you debug?
+<br/>A.) // by commenting
