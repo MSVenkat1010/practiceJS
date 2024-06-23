@@ -46,7 +46,7 @@ number <br>
 boolean <br>
 </span>
 </div><br>
-if you define an array using const. You can change the values of a constant array, but you cannot change the array itself.<br><br>
+if you define an array using `const`. You can change the values of a constant array, but you cannot change the array itself.<br><br>
 
 ```
 const arr = ["hi there"];
