@@ -20,7 +20,7 @@ demo - ## <span style="background-color: yellow">`Next topic is "Number" at page
 > [!TIP] > <br/> for tips
 
 # OUTPUT of the code
-
+OutPut:<br>
 <div style="color:white; background:black; width:50%; padding:1%">
 <span >
 Line <br/>

@@ -1,4 +1,4 @@
-# Chapter 2 - $\color{#f0ad4e}{ Inprogress}$
+# Chapter 2 - $\color{#1FB42A}{DONE}$
 
 # JavaScript Essentials
 
@@ -65,6 +65,7 @@ console.log(str4);
 ```
 
 Output 1:<br/>
+
 <div style="color:white; background:black; width:50%; padding:1%">
 <span >
 Hello, what's your name? Is it "Mike"?<br>
@@ -178,4 +179,339 @@ unknown object <br/>
 >
 > - In the output you can see that typeof `null` returns `object`, while in fact, `null` truly is a primitive and not an `object`. This is a bug that has been there since forever and now cannot be removed due to backward compatibility problems
 
-<h1><span style="background-color: grey">`Next topic is "Operators" at page 32`</span></h1>
+# Operators
+
+## Addition
+
+```
+let nr1 = 12;
+let nr2 = 14;
+let result1 = nr1 + nr2;
+
+let str1 = "Hello ";
+let str2 = "addition";
+let result2 = str1 + str2;
+```
+
+<br>
+The output for the result1 and result2 :
+<br>
+<br>
+
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+26 <br>
+Hello addition
+</span>
+</div>
+
+## Subraction
+
+```
+let nr1 = 20;
+let nr2 = 4;
+let str1 = "Hi";
+let nr3 = 3;
+let result1 = nr1 - nr2;
+let result2 = str1 - nr3;
+console.log(result1, result2);
+```
+
+<br>
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+16 NaN
+</span>
+</div>
+
+## Multiplication
+
+```
+let nr1 = 15;
+let nr2 = 10;
+let str1 = "Hi";
+let nr3 = 3;
+let result1 = nr1 * nr2;
+let result2 = str1 * nr3;
+console.log(result1, result2);
+```
+
+<br>
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+150 NaN
+</span>
+</div>
+
+## Division
+
+```
+let nr1 = 30;
+let nr2 = 5;
+let result1 = nr1 / nr2;
+console.log(result1);
+```
+
+<br>
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+6
+</span>
+</div>
+
+## Exponentiation
+
+```
+let nr1 = 2;
+let nr2 = 3;
+let result1 = nr1 ** nr2;
+console.log(result1);
+```
+
+<br>
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+8
+</span>
+</div>
+
+## Modulus
+
+```
+let nr1 = 10;
+let nr2 = 3;
+let result1 = nr1 % nr2;
+console.log(`${nr1} % ${nr2} = ${result1}`);
+let nr3 = 8;
+let nr4 = 2;
+let result2 = nr3 % nr4;
+console.log(`${nr3} % ${nr4} = ${result2}`);
+let nr5 = 15;
+let nr6 = 4;
+let result3 = nr5 % nr6;
+console.log(`${nr5} % ${nr6} = ${result3}`);
+```
+
+<br>
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+10 % 3 = 1<br> 8%2= 0<br> 15 % 4 = 3<br>
+</span>
+</div>
+
+## Unary Operators: increment and decrement
+
+```
+let nr1 = 4;
+nr1++;
+console.log(nr1);
+let nr2 = 4;
+nr2--;
+console.log(nr2);
+```
+
+<br>
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+5 <br>
+3
+</span>
+</div>
+
+## PreFix and Postfix Operators
+
+### Postfix:
+
+The postfix gets executed after sending the variable through, and then after that, the operation gets executed.
+
+```
+let nr = 2;
+console.log(nr++);
+console.log(nr);
+```
+
+OutPut:<br>
+
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+2 <br>
+3
+</span>
+</div>
+
+### Prefix:
+
+The prefix gets executed before sending the variable through, and often this is the one you will need
+
+```
+let nr = 2;
+console.log(++nr);
+```
+
+OutPut:<br>
+
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+3
+</span>
+</div>
+
+### Exercise:
+
+```
+let nr1 = 4;
+let nr2 = 5;
+let nr3 = 2;
+console.log(nr1++ + ++nr2 * nr3++);
+
+```
+
+OutPut:<br>
+
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+16
+</span>
+</div>
+
+## Combining the Operators
+
+The operations between the parentheses have the highest precedence. After that, the order of the operations takes place based on the type of operation (highest precedence first) and if they are of equal precedence, they take place from left to right
+
+Here is a single table with all the provided data, formatted in Markdown:
+
+| Symbol        | Operation                         | Example                   |
+| ------------- | --------------------------------- | ------------------------- |
+| `(...)`       | Grouping                          | `(x + y)`                 |
+| `**`          | Exponentiation                    | `x ** y`                  |
+| `--`, `++`    | Prefix increment/decrement        | `--x`, `++y`              |
+| `*`, `/`, `%` | Multiplication, Division, Modulus | `x * y`, `x / y`, `x % y` |
+| `+`, `-`      | Addition, Subtraction             | `x + y`, `x - y`          |
+
+## Practice exercise 2.3:
+
+Write some code to calculate the hypotenuse of a triangle using the Pythagorean theorem when given the values of the other two sides. The theorem specifies that the relation between the sides of a right-angled triangle is a^2 + b^2 = c^2.
+You can use prompt() to get the value for a and b. Write code to get the value from the user for a and b. Then square the values of both a and b before adding them together and finding the square root. Print your answer to the console.
+
+```
+let a = prompt("Please insert value for 'a' ")
+let b = prompt("Please insert value for 'b' ")
+c = ((a ** 2) + (b ** 2)) ** 1/2
+console.log(c)
+```
+
+a=1 b=1
+<br>
+<br>
+OutPut:<br>
+
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+1.4142135623730951
+</span>
+</div>
+
+## Assignment Operators
+
+```
+let x = 2;
+x += 2;
+console.log(x)
+x -= 2;
+console.log(x)
+x *= 6;
+console.log(x)
+x /= 3;
+console.log(x)
+x **= 2;
+console.log(x)
+x %= 3;
+console.log(x)
+```
+
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+4<br>
+2<br>
+12<br>
+3<br>
+16<br>
+1<br>
+</span>
+</div>
+
+## Comparision Operators
+```
+let x = 5;
+let y = "5";
+console.log(x == y); // loose equality
+console.log(x === y); // strict equality
+console.log(x != y);
+console.log(x !== y);
+y = 6;
+console.log(y > x);
+console.log(x > y);
+console.log(y > y);
+console.log(y >= y);
+console.log(y < x);
+console.log(x < y);
+console.log(y < y);
+console.log(y <= y);
+
+```
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+true<br>
+false<br>
+false<br>
+true<br>
+true<br>
+false<br>
+false<br>
+true<br>
+false<br>
+true<br>
+false<br>
+true<br>
+</span>
+</div>
+
+## Logical Operators
+```
+let x = 1;
+let y = 2;
+let z = 3;
+console.log(x < y && y < z);
+console.log(x > y && y < z);
+console.log(x > y || y < z);
+console.log(x > y || y > z);
+x = false;
+console.log(!x);
+let x = 1;
+let y = 2;
+console.log(!(x < y));
+```
+OutPut:<br>
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+true<br>
+false<br>
+true<br>
+false<br>
+true<br>
+false
+</span>
+</div>
+
+# Chapter project - $\color{#1FB42A}{DONE}$
+Miles-to-kilometers converter <br>
+BMI calculator <br>
+refer Chapter 2 index.js
