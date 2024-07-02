@@ -1,6 +1,6 @@
 <!-- JavaScript Multiple Values -->
 
-# Chapter 3 JavaScript Multiple Values - $\color{#f0ad4e}{ Inprogress}$
+# Chapter 3 JavaScript Multiple Values - $\color{#1FB42A}{DONE}$
 
 ## Creating arrays
 
