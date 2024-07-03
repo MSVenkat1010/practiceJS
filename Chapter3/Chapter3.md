@@ -170,6 +170,45 @@ a=> (3) ['Milk', 'Bananas', 'Apple']
 
 ## Array methods
 We just  saw we could add elements using new indices. This is not the proper way to do it as it is easy to make mistakes and accidentally overwrite a certain value or skip a certain index. The right way is to do this with a special method. Similarly, we can also delete elements and sort the elements in the array.
+```
+cars[0] = "Tesla";
+console.log(cars[0]);
+console.log(cars);
+cars[3] = "Kia";
+
+cars[-1] = "Fiat";
+console.log(cars[3]);
+console.log(cars[-1]);
+[ 'Tesla', 'Renault', 'Volkswagen', 'Kia', '-1': 'Fiat' ]
+```
+Output:
+<div style="color:white; background:black; width:50%; padding:1%">
+<span >
+[ 'Tesla', 'Renault', 'Volkswagen', 'Kia', '-1': 'Fiat' ]
+</span>
+</div>
+<br>
+
+It does not looks like standard array right!?. That is why we should not do this
+<br>
+Here's another example
+
+```
+console.log(cars.indexOf("Fiat"));// -1 but not 4
+console.log(cars.indexOf("Kia")); // 3 
+
+// lets try cars.pop()
+
+console.log(cars.pop())// 'Kia'
+console.log(cars.pop())// 'Volkswagen
+console.log(cars.pop())// 'Renault
+console.log(cars.pop())// 'Tesla'
+console.log(cars.pop())// undefined
+
+console.log(cars); // [ '-1': 'Fiat' ]
+
+```
+
 
 ## Adding and replacing elements
 ```

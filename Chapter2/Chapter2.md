@@ -123,13 +123,14 @@ The Boolean data type can hold two values: true and false.
 # Symbol
 
 Symbol can be used when it is important that variables are not equal, even though their value and type are the same (in this case, they would both be of the symbol type). This is added as part of ES6
-
-<code>let str1 = "JavaScript is fun!";<br/>
-let str2 = "JavaScript is fun!";<br/>
-console.log("These two strings are the same:", str1 === str2);<br/>
-let sym1 = Symbol("JavaScript is fun!");<br/>
-let sym2 = Symbol("JavaScript is fun!");<br/>
-console.log("These two Symbols are the same:", sym1 === sym2);<br/></code>
+```
+let str1 = "JavaScript is fun!";
+let str2 = "JavaScript is fun!";
+console.log("These two strings are the same:", str1 === str2);
+let sym1 = Symbol("JavaScript is fun!");
+let sym2 = Symbol("JavaScript is fun!");
+console.log("These two Symbols are the same:", sym1 === sym2);
+```
 
 <div style="color:white; background:black; width:50%; padding:1%">
 <span >
@@ -146,21 +147,22 @@ There is special data type for a variable that has not been assigned a value. An
 `null` is a special value for saying that a variable is empty or has an unknown value
 
 # To know the type of a varialble
-
-<code>let str = "Hello";<br/>
-let nr = 7;<br/>
-let bigNr = 12345678901234n;<br/>
-let bool = true;<br/>
-let sym = Symbol("unique");<br/>
-let undef = undefined;<br/>
-let unknown = null;<br/><br/>
-console.log("str", typeof str);<br/>
-console.log("nr", typeof nr);<br/>
-console.log("bigNr", typeof bigNr);<br/>
-console.log("bool", typeof bool);<br/>
-console.log("sym", typeof sym);<br/>
-console.log("undef", typeof undef);<br/>
-console.log("unknown", typeof unknown);<br/></code>
+```
+let str = "Hello";
+let nr = 7;
+let bigNr = 12345678901234n;
+let bool = true;
+let sym = Symbol("unique");
+let undef = undefined;
+let unknown = null;
+console.log("str", typeof str);
+console.log("nr", typeof nr);
+console.log("bigNr", typeof bigNr);
+console.log("bool", typeof bool);
+console.log("sym", typeof sym);
+console.log("undef", typeof undef);
+console.log("unknown", typeof unknown);
+```
 
 <div style="color:white; background:black; width:50%; padding:1%">
 <span >
